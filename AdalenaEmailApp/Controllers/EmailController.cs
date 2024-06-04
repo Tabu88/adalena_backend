@@ -7,9 +7,9 @@ namespace AdalenaEmailApp.Controllers
     [ApiController]
     public class EmailController : ControllerBase
     {
-        private readonly IEmailService _emailService;
+        private readonly EmailService _emailService;
 
-        public EmailController(IEmailService emailService)
+        public EmailController(EmailService emailService)
         {
             _emailService = emailService;
         }
@@ -19,10 +19,17 @@ namespace AdalenaEmailApp.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public IActionResult SendEmail(EmailDTO request)
+        public async Task<IActionResult> SendEmail(EmailDTO request)
         {
-            _emailService.SendEmail(request);
-            return Ok();
+
+            var placeholders = new Dictionary<string, string>
+            {
+                { "Username" , "Dennis Tabu"}
+            };
+
+            var htmltemplatePath = Path.Combine(Directory.GetCurrentDirectory(), "EmailTemplates", "EmailConfirmation.html");
+            _emailService.SendEmail(request, htmltemplatePath, placeholders);
+            return Ok("Email sent successfully");
         
         }
     }

@@ -3,6 +3,7 @@
     public class EmailDTO
     {
         public string To { get; set; } = string.Empty;
+        public string Username { get; set; } = string.Empty;
 
         public string Subject { get; set; } = string.Empty;
 

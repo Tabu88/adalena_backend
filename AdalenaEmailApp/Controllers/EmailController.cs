@@ -24,11 +24,11 @@ namespace AdalenaEmailApp.Controllers
 
             var placeholders = new Dictionary<string, string>
             {
-                { "Username" , "Dennis Tabu"}
+                { "Username" , request.Username}
             };
 
             var htmltemplatePath = Path.Combine(Directory.GetCurrentDirectory(), "EmailTemplates", "EmailConfirmation.html");
-            _emailService.SendEmail(request, htmltemplatePath, placeholders);
+            await _emailService.SendEmail(request, htmltemplatePath, placeholders);
             return Ok("Email sent successfully");
         
         }

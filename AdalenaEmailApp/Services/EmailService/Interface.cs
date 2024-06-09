@@ -3,6 +3,6 @@ namespace AdalenaEmailApp.Services.EmailService
 {
     public interface IEmailService
     {
-        void SendEmail(EmailDTO request, string htmltemplatePath);
+        void SendEmail(TourDTO request, string htmltemplatePath);
     }
 }

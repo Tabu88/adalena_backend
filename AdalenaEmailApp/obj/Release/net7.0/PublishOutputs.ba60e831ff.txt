@@ -1,0 +1,14 @@
+C:\Users\Dennis.Wabomba\source\repos\AdalenaEmailApp\AdalenaEmailApp\obj\Release\net7.0\PubTmp\Out\AdalenaEmailApp.exe
+C:\Users\Dennis.Wabomba\source\repos\AdalenaEmailApp\AdalenaEmailApp\obj\Release\net7.0\PubTmp\Out\appsettings.Development.json
+C:\Users\Dennis.Wabomba\source\repos\AdalenaEmailApp\AdalenaEmailApp\obj\Release\net7.0\PubTmp\Out\appsettings.json
+C:\Users\Dennis.Wabomba\source\repos\AdalenaEmailApp\AdalenaEmailApp\obj\Release\net7.0\PubTmp\Out\AdalenaEmailApp.dll
+C:\Users\Dennis.Wabomba\source\repos\AdalenaEmailApp\AdalenaEmailApp\obj\Release\net7.0\PubTmp\Out\AdalenaEmailApp.deps.json
+C:\Users\Dennis.Wabomba\source\repos\AdalenaEmailApp\AdalenaEmailApp\obj\Release\net7.0\PubTmp\Out\AdalenaEmailApp.runtimeconfig.json
+C:\Users\Dennis.Wabomba\source\repos\AdalenaEmailApp\AdalenaEmailApp\obj\Release\net7.0\PubTmp\Out\AdalenaEmailApp.pdb
+C:\Users\Dennis.Wabomba\source\repos\AdalenaEmailApp\AdalenaEmailApp\obj\Release\net7.0\PubTmp\Out\MailKit.dll
+C:\Users\Dennis.Wabomba\source\repos\AdalenaEmailApp\AdalenaEmailApp\obj\Release\net7.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Users\Dennis.Wabomba\source\repos\AdalenaEmailApp\AdalenaEmailApp\obj\Release\net7.0\PubTmp\Out\MimeKit.dll
+C:\Users\Dennis.Wabomba\source\repos\AdalenaEmailApp\AdalenaEmailApp\obj\Release\net7.0\PubTmp\Out\BouncyCastle.Crypto.dll
+C:\Users\Dennis.Wabomba\source\repos\AdalenaEmailApp\AdalenaEmailApp\obj\Release\net7.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Dennis.Wabomba\source\repos\AdalenaEmailApp\AdalenaEmailApp\obj\Release\net7.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Dennis.Wabomba\source\repos\AdalenaEmailApp\AdalenaEmailApp\obj\Release\net7.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll

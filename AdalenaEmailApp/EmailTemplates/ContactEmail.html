@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>UserContent Email</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 25px;
+            color: black;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between; /* Distributes space between items */
+            align-items: end; /* Vertically centers the items */
+            text-decoration-style: solid;
+            text-decoration-color: #ffffff;
+            font-weight: 500;
+            background-color: #0d1637;
+            padding: 20px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            color: white; /* Ensures text in the footer is black */
+        }
+
+            footer img {
+                margin-left: 50px;
+                margin-right: auto;
+                width: 250px;
+                height: auto;
+            }
+
+            footer .footer-text {
+                margin-left: auto;
+                margin-right: 100px;
+                text-align: right;
+                flex: 1;
+            }
+
+            footer a {
+                color: black; /* Ensures links in the footer are black */
+                text-decoration: none; /* Optional: removes underline from links */
+            }
+
+                footer a:hover {
+                    text-decoration: underline; /* Optional: adds underline on hover */
+                }
+
+                footer a img {
+                    width: 50px;
+                    height: auto;
+                }
+    </style>
+</head>
+<body>
+    <h2> Contact Query request</h2>
+        <p>This a user query, here are the details</p>
+        <p>Full Name: {{UserName}}</p>
+        <p>Email Address: {{Email}}</p>
+        <p>Phone Number: {{Phone}}</p>
+        <p>Reason for contacting us: {{Reason}}</p>
+        <p>Media: {{Media}}</p>
+        <p>Query: {{Query}}</p>
+        <footer>
+            <img src="https://res.cloudinary.com/djzwtnp3c/image/upload/v1717585064/Adalena_White_house_blue_backgrnd_wr3xf4.png" alt="Logo" />
+            <div class="footer-text">
+                <p>&copy; 2024 Adalena Family Home. All rights reserved.</p>
+                <p><a href="contact.html">Contact Us</a> | <a href="terms.html">Terms of Service</a> | <a href="privacy.html">Privacy Policy</a></p>
+                <p>
+                    Follow us on:
+                    <a href="https://facebook.com/yourcompany" target="_blank">
+                        <img src="https://res.cloudinary.com/djzwtnp3c/image/upload/v1717587941/facebook_atytnm.png" alt="Facebook" />
+                    </a>
+                    <a href="https://instagram.com/yourcompany" target="_blank">
+                        <img src="https://res.cloudinary.com/djzwtnp3c/image/upload/v1717587941/insta_jiyc9f.png" alt="Instagram" />
+                    </a>
+                    <a href="https://linked_in.com/yourcompany" target="_blank">
+                        <img src="https://res.cloudinary.com/djzwtnp3c/image/upload/v1717587941/linkedin_qfgibm.png" alt="LinkedIn" />
+                    </a>
+                </p>
+            </div>
+        </footer>
+</body>
+</html>

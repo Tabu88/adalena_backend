@@ -1,5 +1,7 @@
 global using AdalenaEmailApp.Services.EmailService;
 global using AdalenaEmailApp.Models;
+using System.Security.Cryptography.X509Certificates;
+
 namespace AdalenaEmailApp
 {
     public class Program
@@ -9,7 +11,7 @@ namespace AdalenaEmailApp
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
+           
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();

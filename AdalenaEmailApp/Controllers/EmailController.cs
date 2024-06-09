@@ -15,22 +15,42 @@ namespace AdalenaEmailApp.Controllers
         }
 
         [HttpPost]
-        [Route("Send")]
+        [Route("SendContact")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> SendEmail(EmailDTO request)
+        public async Task<IActionResult> SendContactEmail(ContactDTO request)
+        {
+            var placeholders = new Dictionary<string, string>
+            {
+                { "Username" , request.Name}
+            };
+
+            var contentTemplatePath = Path.Combine(Directory.GetCurrentDirectory(), "EmailTemplates", "ContactEmail.html");
+            var htmlTemplatePath = Path.Combine(Directory.GetCurrentDirectory(), "EmailTemplates", "EmailConfirmation.html");
+            await _emailService.SendContactEmail(request, htmlTemplatePath, contentTemplatePath , placeholders);
+            return Ok("Email sent successfully");
+        
+        }
+
+        [HttpPost]
+        [Route("SendTour")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> SendTourEmail(TourDTO request)
         {
 
             var placeholders = new Dictionary<string, string>
             {
-                { "Username" , request.Username}
+                { "Username" , request.Name}
             };
 
+            var contentTemplatePath = Path.Combine(Directory.GetCurrentDirectory(), "EmailTemplates", "TourEmail.html");
             var htmltemplatePath = Path.Combine(Directory.GetCurrentDirectory(), "EmailTemplates", "EmailConfirmation.html");
-            await _emailService.SendEmail(request, htmltemplatePath, placeholders);
+            await _emailService.SendTourEmail(request, htmltemplatePath, contentTemplatePath, placeholders);
             return Ok("Email sent successfully");
-        
+
         }
     }
 }
